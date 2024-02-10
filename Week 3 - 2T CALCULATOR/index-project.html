@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/JavaScript/Week 3 - 2T CALCULATOR/script-project.js"></script>
+    <link rel="stylesheet" href="/JavaScript/Week 3 - 2T CALCULATOR/style-project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Ephesis&family=Great+Vibes&family=Kenia&display=swap" rel="stylesheet">
+    <title>Fuel Mixture Calculator</title>
+
+</head>
+
+
+<body>
+   
+    <div class="mixtureCalcApp">
+        <div class="mainTitle">
+            <h1 class="h1-title">PREMIX RATIO CALCULATOR</h1>
+            <!-- <img src="/Photos/Two-pipes-and-sign.jpg" class="titleImage" alt="Two exhaust pipes and a main title"> -->
+        </div>
+
+        <div action="#" class="upperPart">
+            <form action="#">
+
+                <h3 class="h3Titles">Your desired ratio</h3>
+
+                <select name="fuelOilRatio" id="fuelOilRatio" class="dropdownOptions">
+                    <option>Please select</option>
+                    <option value= 60 id="sixtyToOne">60 : 1</option>
+                    <option value= 50 id="fiftyToOne">50 : 1</option>
+                    <option value= 40 id="fourtyToOne">40 : 1</option>
+                    <option value= 30 id="thirtyToOne">30 : 1</option>
+                    <option value= 25 id="twentyfiveToOne">25 : 1</option>
+                </select>
+        
+                <h3 class="h3Titles">Your Jerry Can Size (L)</h3>
+        
+                <select name="jerryCanSize" id="jerryCanSize" class="dropdownOptions">
+                    <option value="select">Please select</option>
+                    <option value= 20 id="twentyL">20 L</option>
+                    <option value= 15 id="fifteenL">15 L</option>
+                    <option value= 10 id="tenL">10 L</option>
+                    <option value= 5 id="fiveL">5 L</option>
+                </select>
+
+                <br><br>
+
+                <div class="submitAndResetButtons">
+                    <input type="submit" value="Submit" id="userInputSubmit" class="submitButton">
+                    <input type="reset" value="Reset" id="predefInputReset" class="resetButton">
+                </div>
+                
+                
+                <h3 id="amountOfOilNeeded" class="calcResultTitle"></h3>
+                
+            </form>
+        </div>
+
+        <div class="lowerPart">
+            <form action="#">
+
+                <h3 class="customCalcTitle">Custom calculation:</h3>
+
+                <div class="customRatioInput">
+                    <label for="ratio" class="ratioAndFuelTitle">Ratio:</label>
+                    <input type="number" min="0" id="ratioFuelCustom" placeholder="Type in your own">
+            
+                    <span class="spanBetween">:</span>
+            
+                    <select name="partsOfOil">
+                        <option value= 1 id="partsOilCustom">1</option>
+                    </select> 
+                </div>
+
+                <br><br>
+
+                <div class="customFuelInput">
+                    <label for="fuel" class="ratioAndFuelTitle">Fuel (L):</label>
+                    <input type="number" min="0" id="FuelInputCustom" placeholder="How much fuel to premix">
+                </div>
+
+                <br><br>
+
+                <div class="submitAndResetButtons">
+                    <input type="submit" value="Submit" id="userInputSubmitCustom" class="submitButton">
+                    <input type="reset" value="Reset" id="userInputResetCustom" class="resetButton">
+                </div>
+
+                <h3 class="calcResultTitle" id="customAmountOilNeeded"></h3>
+
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
