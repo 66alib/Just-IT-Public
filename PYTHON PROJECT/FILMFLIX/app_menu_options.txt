@@ -1,0 +1,12 @@
+
+FilmFlix Main Menu 
+~~~~~~~~~~~~~~~~~~
+------------------------------------------
+1. Add a new record
+2. Amend a single field of a record
+3. Amend all fields of a record
+4. Display all records currently present
+5. Delete a record
+6. Report Menu options
+7. Exit
+------------------------------------------
