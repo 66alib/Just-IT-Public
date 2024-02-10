@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4A460;
+}
+
+.mixtureCalcApp {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 500px;
+    height: 740px;
+    border-radius: 15px;
+    background-image: url("KTM.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+}
+
+.mainTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: tahoma, sans-serif;
+    color: #9400D3;
+}
+
+.titleImage {
+    width: 490px;
+    height: 180px;
+}
+
+.pipeMirroredView {
+    margin-right: 20px;
+}
+
+.pipeNormalView {
+    margin-left: 20px;
+}
+
+.customCalcTitle {
+    display: flex;
+    justify-content: center;
+    color: #9400D3;
+}
+
+.calcResultTitle {
+    display: flex;
+    justify-content: center;
+    color: #9400D3;
+}
+
+.h3Titles {
+    display: flex;
+    justify-content: center;
+    color: #9400D3;
+}
+
+.dropdownOptions {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submitButton {
+    margin-right: 10px;
+    box-shadow: 3px 2px 2px black;
+}
+
+.resetButton {
+    margin-left: 10px;
+    background-color:#FF6700;
+    box-shadow: 3px 2px 2px black;
+}
+
+.submitAndResetButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.customRatioInput {
+    display: flex;
+    justify-content: center;
+}
+
+.customFuelInput {
+    display: flex;
+    justify-content: center;
+}
+
+.ratioAndFuelTitle {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #9400D3;
+}
+
+.spanBetween {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input.resetButton:hover {
+    cursor: pointer;
+}
+
+input.submitButton:hover {
+    cursor: pointer;
+}
+
+.dropdownOptions {
+    cursor: pointer;
+}
+
+.upperPart {
+    width: 350px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 17px;
+}
+
+.upperPart:hover {
+    background-color: lightgrey;
+    transition: all linear 0.7s;
+}
+
+.lowerPart {
+    width: 350px;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.lowerPart:hover {
+    background-color: lightgrey;
+    transition: all linear 0.7s;
+}
