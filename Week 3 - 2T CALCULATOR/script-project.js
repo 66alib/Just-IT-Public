@@ -19,19 +19,12 @@ const predefInputReset = document.getElementById("predefInputReset");
 
 userInputSubmit.addEventListener("click", (e) => {
     e.preventDefault ()
-    userInputRatio = fuelOilRatio.value     /* this line is not necessary as the variable.value can be directly injected into the formula */
-    userInputFuel = jerryCanSize.value      /* this line is not necessary as the variable.value can be directly injected into the formula */ 
+    userInputRatio = fuelOilRatio.value     
+    userInputFuel = jerryCanSize.value      
     let calcOilNeeded = 1 / userInputRatio * 1000 * userInputFuel;
     amountOfOilNeeded.innerText = `You need ${calcOilNeeded} ml of oil.`;
 });
 
-// function resetAll() {
-//     getElementById("amountOfOilNeeded").innerText = "";
-// };
-
-// predefInputReset.addEventListener("click", () => {
-//     getElementById("amountOfOilNeeded"). = "";
-// });
 
 const ratioFuelCustom = document.getElementById("ratioFuelCustom");
 const partsOilCustom = document.getElementById("partsOilCustom");
